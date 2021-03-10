@@ -20,7 +20,22 @@ import {
 import PropTypes from "prop-types";
 
 const Sidebar = () => {
-  return <div className="" />;
+  return (
+    <Navbar
+      color={
+        this.props.location.pathname.indexOf("full-screen-maps") !== -1
+          ? "dark"
+          : this.state.color
+      }
+      expand="lg"
+      className={
+        this.props.location.pathname.indexOf("full-screen-maps") !== -1
+          ? "navbar-absolute fixed-top"
+          : "navbar-absolute fixed-top " +
+            (this.state.color === "transparent" ? "navbar-transparent " : "")
+      }
+    ></Navbar>
+  );
 };
 
 Sidebar.defaultProps = {};
