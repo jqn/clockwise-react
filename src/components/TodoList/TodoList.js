@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Card, ListGroup } from "react-bootstrap";
-import TextInput from "./TextInput";
-import TodoItem from "./TodoItem";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Card, ListGroup } from 'react-bootstrap';
+import TextInput from './TextInput';
+import TodoItem from './TodoItem';
 
 const TodoList = () => {
   return (

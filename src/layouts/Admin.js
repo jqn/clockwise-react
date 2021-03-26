@@ -1,12 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import NavigationBar from "../components/NavigationBar";
-import Sidebar from "../components/Sidebar";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Route, Switch } from 'react-router-dom';
 
-import { TodoList } from "../components/TodoList";
-import Counter from "../components/Counter";
+import NavigationBar from '../components/NavigationBar';
+import Sidebar from '../components/Sidebar';
+import routes from '../routes';
 
 const AdminLayout = () => {
   return (
@@ -14,24 +13,17 @@ const AdminLayout = () => {
       <Sidebar />
       <div id="page-content-wrapper">
         <NavigationBar />
-        <Container fluid className="my-3">
-          <Row>
-            <Col className="m-2">
-              <Card>1</Card>
-            </Col>
-            <Col className="m-2">
-              <Counter />
-            </Col>
-          </Row>
-          <Row>
-            <Col md className="m-2">
-              <TodoList />
-            </Col>
-            <Col md className="m-2">
-              empty
-            </Col>
-          </Row>
-        </Container>
+        <Switch>
+          {routes.map((prop, key) => {
+            return (
+              <Route
+                path={prop.layout + prop.path}
+                component={prop.component}
+                key={key}
+              />
+            );
+          })}
+        </Switch>
       </div>
     </div>
   );

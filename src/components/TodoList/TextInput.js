@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { InputGroup, FormControl } from "react-bootstrap";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { InputGroup, FormControl } from 'react-bootstrap';
 
 const inputStyle = {
   // margin: "40px",

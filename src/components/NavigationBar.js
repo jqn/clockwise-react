@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { VscBell, VscGear } from "react-icons/vsc";
-import { RiLayoutMasonryFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { VscBell, VscGear } from 'react-icons/vsc';
+import { RiLayoutMasonryFill } from 'react-icons/ri';
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,10 @@ const NavigationBar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        className="collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
           <li className="nav-item active">
             <a className="nav-link" href="#">
