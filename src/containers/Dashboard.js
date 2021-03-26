@@ -1,25 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import React from "react";
+import PropTypes from "prop-types";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-import { TodoList } from '../components/TodoList';
-import Counter from '../components/Counter';
+import { TodoList } from "../components/TodoList";
+import Counter from "../components/Counter";
+import TimeZones from "../components/TimeZones";
 
 const Dashboard = () => {
   return (
     <div className="content">
       <Container fluid className="my-3">
         <Row>
-          <Col className="m-2">
+          <Col md className="m-2">
             <Card>1</Card>
           </Col>
-          <Col className="m-2">
+          <Col md className="m-2">
             <Counter />
           </Col>
         </Row>
         <Row>
           <Col md className="m-2">
-            empty
+            <TimeZones />
           </Col>
           <Col md className="m-2">
             <TodoList />
