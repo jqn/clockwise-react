@@ -1,19 +1,19 @@
-import React, { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
-import { Card } from 'react-bootstrap';
+import React, { useState, useRef } from "react";
+import PropTypes from "prop-types";
+import { Card } from "react-bootstrap";
 
 const timerStyle = {
-  color: '#FF6B01',
-  fontSize: '96px',
-  marginBottom: '22px',
+  color: "#FF6B01",
+  fontSize: "96px",
+  marginBottom: "22px",
 };
 
 function padTime(time) {
-  return time.toString().padStart(2, '0');
+  return time.toString().padStart(2, "0");
 }
 
 const Timer = () => {
-  const [title, setTitle] = useState('Work on ClockWise');
+  const [title, setTitle] = useState("Work on ClockWise");
   const [timeLeft, setTimeLeft] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
@@ -47,8 +47,8 @@ const Timer = () => {
   const seconds = padTime(timeLeft + minutes * 60);
 
   return (
-    <Card className="text-center p-2">
-      <h2>{title}</h2>
+    <Card className="card h-100 text-center p-2">
+      <h5 className="card-title">{title}</h5>
       <div className="timer" style={timerStyle}>
         <span>{minutes}</span>
         <span>:</span>
@@ -57,18 +57,12 @@ const Timer = () => {
 
       <div className="buttons">
         {!isRunning && (
-          <button
-            onClick={startTimer}
-            className="btn btn-success mr-2"
-          >
+          <button onClick={startTimer} className="btn btn-success mr-2">
             Start
           </button>
         )}
         {isRunning && (
-          <button
-            onClick={stopTimer}
-            className="btn btn-warning mr-2"
-          >
+          <button onClick={stopTimer} className="btn btn-warning mr-2">
             Stop
           </button>
         )}

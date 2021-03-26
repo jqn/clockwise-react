@@ -3,7 +3,8 @@ import { Form, Card } from "react-bootstrap";
 
 export default function TimeZone() {
   return (
-    <Card className="p-2">
+    <Card className="card h-100 p-2">
+      <h5 className="card-title">Time Zones</h5>
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Control placeholder="8:46 AM" />
       </Form.Group>

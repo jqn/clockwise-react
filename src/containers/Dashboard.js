@@ -5,6 +5,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { TodoList } from "../components/TodoList";
 import Counter from "../components/Counter";
 import TimeZones from "../components/TimeZones";
+import Events from "../components/Events";
 
 const Dashboard = () => {
   return (
@@ -12,7 +13,7 @@ const Dashboard = () => {
       <Container fluid className="my-3">
         <Row>
           <Col md className="m-2">
-            <Card>1</Card>
+            <Events />
           </Col>
           <Col md className="m-2">
             <Counter />
