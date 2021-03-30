@@ -6,9 +6,9 @@ import TodoItem from "./TodoItem";
 const TodoList = () => {
   return (
     <div className="card h-100 p-2">
-      <h5 className="card-title">To do</h5>
+      <h4 className="card-title text-center">To do</h4>
       <TextInput />
-      <ul className="rounded-0 mt-2">
+      <ul className="list-group rounded-0 mt-2">
         <TodoItem />
       </ul>
     </div>

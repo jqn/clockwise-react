@@ -47,7 +47,7 @@ const Timer = () => {
 
   return (
     <div className="card h-100 text-center p-2">
-      <h5 className="card-title">{title}</h5>
+      <h4 className="card-title">{title}</h4>
       <div className="timer" style={timerStyle}>
         <span>{minutes}</span>
         <span>:</span>

@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 
 const TextInput = () => {
   return (
-    <form>
-      <div
+    <div className="form-group">
+      <input
+        className="form-control"
         placeholder="New Todo"
         aria-label="todo"
         aria-describedby="todo"
       />
-    </form>
+    </div>
   );
 };
 

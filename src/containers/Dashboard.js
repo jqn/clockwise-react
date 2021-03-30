@@ -9,20 +9,20 @@ import Events from "../components/Events";
 const Dashboard = () => {
   return (
     <div className="container-fluid">
-      <div fluid className="my-3">
+      <div className="my-3">
         <div className="row">
-          <div md className="m-2">
+          <div className="col-md m-2">
             <Events />
           </div>
-          <div md className="m-2">
+          <div className="col-md m-2">
             <Counter />
           </div>
         </div>
-        <div>
-          <div md className="m-2">
+        <div className="row">
+          <div className="col-md m-2">
             <TimeZones />
           </div>
-          <div md className="m-2">
+          <div className="col-md m-2">
             <TodoList />
           </div>
         </div>
