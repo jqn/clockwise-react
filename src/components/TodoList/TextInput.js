@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  FormControl } from 'react-bootstrap';
 
 
 
 const TextInput = () => {
   return (
-    <div >
-      <FormControl
+    <form>
+      <div
         placeholder="New Todo"
         aria-label="todo"
         aria-describedby="todo"
       />
-    </div>
+    </form>
   );
 };
 

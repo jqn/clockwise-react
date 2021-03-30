@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import PropTypes from "prop-types";
-import { Card } from "react-bootstrap";
 
 const timerStyle = {
   color: "#FF6B01",
@@ -47,7 +46,7 @@ const Timer = () => {
   const seconds = padTime(timeLeft + minutes * 60);
 
   return (
-    <Card className="card h-100 text-center p-2">
+    <div className="card h-100 text-center p-2">
       <h5 className="card-title">{title}</h5>
       <div className="timer" style={timerStyle}>
         <span>{minutes}</span>
@@ -70,7 +69,7 @@ const Timer = () => {
           Reset
         </button>
       </div>
-    </Card>
+    </div>
   );
 };
 

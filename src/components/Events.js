@@ -1,17 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Card, ListGroup } from "react-bootstrap";
-
 const Events = () => {
   return (
-    <Card className="card p-2 h-100">
+    <div className="card p-2 h-100">
       <h5 className="card-title">Events</h5>
-      <ListGroup>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-      </ListGroup>
-    </Card>
+      <ul className="list-grop">
+        <li className="list-group-item">Cras justo odio</li>
+        <li className="list-group-item">Dapibus ac facilisis in</li>
+      </ul>
+    </div>
   );
 };
 
